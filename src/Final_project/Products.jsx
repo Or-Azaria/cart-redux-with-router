@@ -32,7 +32,7 @@ export default function Products() {
             <tr>
               <th>Full name</th>
               <th>purchased date</th>
-              <th>select </th>
+              <th>select</th>
               <th>Add now</th>
             </tr>
             {storeData.customers.map((obj, index) => {
