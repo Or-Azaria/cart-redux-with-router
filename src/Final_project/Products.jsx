@@ -19,7 +19,7 @@ export default function Products() {
               <Link to={`/EditProduct/${obj.id}`} className="text-light">
                 <h4>{obj.name}</h4>
               </Link>
-              <h4>price: {obj.price}</h4>
+              <h4>price {obj.price}</h4>
               <h4>quantity: {obj.quantity}</h4>
             </div>
           );
