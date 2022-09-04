@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function EditCustomer() {
   return (
-    <div>
+    <div className="container">
       <input type="text" />
       <button>update</button>
       <br />

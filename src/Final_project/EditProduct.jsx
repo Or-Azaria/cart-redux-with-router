@@ -42,7 +42,7 @@ export default function EditProduct() {
     navigate("/Products");
   };
   return (
-    <div>
+    <div className="container">
       <input
         onChange={handleInput}
         placeholder="product name"
