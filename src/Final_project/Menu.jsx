@@ -6,14 +6,12 @@ import Purchases from "./Purchases";
 import "bootstrap/dist/css/bootstrap.min.css";
 import EditProduct from "./EditProduct";
 import EditCustomer from "./EditCustomer";
+import "./Menu.css";
 
 export default function Menu() {
   return (
-    <div
-      className="bg-success"
-      style={{ textAlign: "center", height: "100vh" }}
-    >
-      <h1 className="text-light">Menu Page</h1>
+    <div style={{ textAlign: "center", height: "100vh" }}>
+      <h1 className="text-bg-dark ">Menu</h1>
       <div className="fs-5 d-flex justify-content-center gap-3 ">
         <Link
           to="/Products"

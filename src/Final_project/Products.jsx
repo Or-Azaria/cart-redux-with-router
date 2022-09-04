@@ -1,6 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import "./Products.css";
 
 export default function Products() {
   const d = new Date();
@@ -15,24 +16,22 @@ export default function Products() {
       <div className="gap-5" style={{ width: "25%" }}>
         {storeData.products.map((obj, index) => {
           return (
-            <div key={index} className="border rounded-5 my-3">
+            <div key={index} className="product-box border rounded-5 my-3">
               <Link to={`/EditProduct/${obj.id}`} className="text-light">
                 <h4>{obj.name}</h4>
               </Link>
-              <h4>price: {obj.price}</h4>
+              <h4>price: {obj.price}$</h4>
               <h4>quantity: {obj.quantity}</h4>
             </div>
           );
         })}
       </div>
-
       <div>
-        <table border={1}>
+        <table className="product-box" border={1}>
           <tbody>
             <tr>
               <th>Full name</th>
               <th>purchased date</th>
-              <th>select</th>
               <th>Add now</th>
             </tr>
             {storeData.customers.map((obj, index) => {

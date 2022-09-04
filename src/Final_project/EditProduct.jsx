@@ -47,14 +47,14 @@ export default function EditProduct() {
         onChange={handleInput}
         placeholder="product name"
         name="name"
-        className="me-3"
+        className="me-3 rounded-3 "
         type="text"
       />
       <input
         onChange={handleInput}
         name="price"
         placeholder="price"
-        className="me-3"
+        className="me-3 rounded-3 "
         type="number"
       />
       <input
@@ -62,6 +62,7 @@ export default function EditProduct() {
         name="quantity"
         placeholder="quantity"
         type="number"
+        className="rounded-3"
       />
       <br />
       <br />
