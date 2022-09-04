@@ -9,20 +9,35 @@ import EditCustomer from "./EditCustomer";
 
 export default function Menu() {
   return (
-    <div className="bg-success" style={{ textAlign: "center" }}>
+    <div
+      className="bg-success"
+      style={{ textAlign: "center", height: "100vh" }}
+    >
       <h1 className="text-light">Menu Page</h1>
       <div className="fs-5 d-flex justify-content-center gap-3 ">
-        <Link to="/Products" className="text-decoration-none text-light">
+        <Link
+          to="/Products"
+          className="btn btn-dark text-decoration-none text-light"
+        >
           Products
         </Link>
-        <Link to="/Customers" className="text-decoration-none text-light">
+        <Link
+          to="/Customers"
+          className="btn btn-dark text-decoration-none text-light"
+        >
           Customers
         </Link>
-        <Link to="/Purchases" className="text-decoration-none text-light">
+        <Link
+          to="/Purchases"
+          className="btn btn-dark text-decoration-none text-light"
+        >
           Purchases
         </Link>
       </div>
       <hr className="text-light" />
+      <br />
+      <br />
+      <br />
       <Routes>
         <Route path="/Products" element={<Products />} />
         <Route path="/Customers" element={<Customers />} />
