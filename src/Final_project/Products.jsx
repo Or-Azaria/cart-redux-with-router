@@ -11,14 +11,13 @@ export default function Products() {
   const dSec = d.getSeconds();
   const storeData = useSelector((state) => state);
   return (
-    <div className="container gap-5 d-flex">
-      <h1 className="text-light">Products</h1>
+    <div className="container gap-5 d-flex justify-content-around">
       <div className="gap-5" style={{ width: "25%" }}>
         {storeData.products.map((obj, index) => {
           return (
             <div key={index} className="product-box border rounded-5 my-3">
               <Link to={`/EditProduct/${obj.id}`} className="text-light">
-                <h4>{obj.name}</h4>
+                <h4 className="text-dark">{obj.name}</h4>
               </Link>
               <h4>price: {obj.price}$</h4>
               <h4>quantity: {obj.quantity}</h4>
@@ -26,8 +25,8 @@ export default function Products() {
           );
         })}
       </div>
-      <div>
-        <table className="product-box" border={1}>
+      <div className="product-box rounded-4">
+        <table>
           <tbody>
             <tr>
               <th>Full name</th>
@@ -42,7 +41,7 @@ export default function Products() {
                       <span>
                         <Link
                           to={`/EditCustomer/${obj.id}`}
-                          className="text-light"
+                          className="text-dark"
                         >
                           {obj.first} {obj.last}
                         </Link>
@@ -52,7 +51,7 @@ export default function Products() {
                       {dYear}/{dHour}:{dMin}:{dSec}
                     </td>
                     <td>
-                      <button className="btn btn-light ms-3">ADD</button>
+                      <button className="btn btn-light">ADD</button>
                     </td>
                   </tr>
                 </>
