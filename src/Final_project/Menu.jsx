@@ -19,7 +19,7 @@ export default function Menu() {
           Customers
         </Link>
         <Link to="/Purchases" className="text-decoration-none text-light">
-          Purchases
+          Purchases ss
         </Link>
       </div>
       <hr className="text-light" />
