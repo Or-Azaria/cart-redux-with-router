@@ -12,27 +12,26 @@ export default function Menu() {
   return (
     <div style={{ textAlign: "center", height: "100vh" }}>
       <h1 className="text-bg-dark mb-5">Menu</h1>
-      <div className="fs-5 d-flex justify-content-center gap-3 ">
+      <div className="fs-3 d-flex justify-content-center gap-3 ">
         <Link
           to="/Products"
-          className="btn btn-dark text-decoration-none text-light"
+          className="fs-3 btn btn-dark text-decoration-none text-light"
         >
           Products
         </Link>
         <Link
           to="/Customers"
-          className="btn btn-dark text-decoration-none text-light"
+          className="fs-3 btn btn-dark text-decoration-none text-light"
         >
           Customers
         </Link>
         <Link
           to="/Purchases"
-          className="btn btn-dark text-decoration-none text-light"
+          className="fs-3 btn btn-dark text-decoration-none text-light"
         >
           Purchases
         </Link>
       </div>
-      <hr className="text-light" />
       <br />
       <br />
       <br />
