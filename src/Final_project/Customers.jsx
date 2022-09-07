@@ -1,5 +1,5 @@
 import React from "react";
 
 export default function Customers() {
-  return <div className="container d-flex">Customers</div>;
+  return <div className="container d-flex text-light">Customers</div>;
 }
