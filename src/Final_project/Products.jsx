@@ -18,8 +18,8 @@ export default function Products() {
             <div key={index} className="product-box border rounded-5 my-3">
               <Link to={`/EditProduct/${obj.id}`} className="text-light">
                 <h4 className="text-dark">{obj.name}</h4>{" "}
-                <h4>price: {obj.price}$</h4>
-                <h4>quantity: {obj.quantity}</h4>
+                <h4 className="text-dark">price: {obj.price}$</h4>
+                <h4 className="text-dark">quantity: {obj.quantity}</h4>
               </Link>
             </div>
           );
