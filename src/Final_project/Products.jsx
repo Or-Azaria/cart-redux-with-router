@@ -29,7 +29,7 @@ export default function Products() {
         <table>
           <tbody>
             <tr>
-              <th>Full name</th>
+              <th>Full</th>
               <th>purchased date</th>
               <th>Add now</th>
             </tr>
