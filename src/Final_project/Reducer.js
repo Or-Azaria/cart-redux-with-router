@@ -20,7 +20,7 @@ function reducer(state = initialState, action) {
       const index = arr.products.findIndex((user) => user.id == id);
       console.log(index);
       if (index >= 0) {
-        arr.products[index] = action.payload;
+        arr.products[index] = action;
       }
     default:
       return state;
