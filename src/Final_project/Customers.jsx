@@ -24,7 +24,7 @@ export default function Customers() {
         <table>
           <tbody>
             <tr>
-              <th>Full name</th>
+              <th> name</th>
               <th>Add now</th>
             </tr>
             {storeData.customers.map((obj, index) => {
