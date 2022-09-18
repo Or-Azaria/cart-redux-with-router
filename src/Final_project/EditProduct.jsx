@@ -69,9 +69,7 @@ export default function EditProduct() {
       <button className="btn btn-light me-3" onClick={updateProduct}>
         update
       </button>
-      <button className="btn btn-light" onClick={remove}>
-        delete
-      </button>
+      <button className="btn btn-light" onClick={remove}></button>
     </div>
   );
 }
