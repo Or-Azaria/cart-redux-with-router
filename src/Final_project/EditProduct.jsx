@@ -70,7 +70,7 @@ export default function EditProduct() {
         update product
       </button>
       <button className="btn btn-light" onClick={remove}>
-        delete product
+        product
       </button>
     </div>
   );
