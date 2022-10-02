@@ -17,7 +17,7 @@ export default function Menu() {
           to="/Products"
           className="fs-3 btn btn-dark text-decoration-none text-light"
         >
-          Products :
+          Products
         </Link>
         <Link
           to="/Customers"
